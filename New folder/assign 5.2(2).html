@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head><title>DETAILS</title></head>
+    <body>
+        <h1 style="background-color: darkviolet;text-align: center;"><b><u>GOLF CLUB MEMBERSHIP FORM</u></b></h1>
+        <h2 style="background-color: chartreuse;">Personal Information</h2>
+        <form style="background-color: gold;">
+            
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required 
+                   pattern="[A-Za-z ]+" title="Name should only contain letters and spaces.">
+            <br>
+                <br>
+                <label for="Lname">Last name :</label>
+                
+                <input type="text"id="Lname" name="Lname">
+                <br>
+                <br>
+                <label for="city">Country Name:</label><br>
+                <input type="text" id="city" name="city" required
+                       pattern="[A-Za-zÀ-ÿ0-9\s,'-]+" 
+                       placeholder="e.g. New York"
+                       title="City name should only contain letters, spaces, commas, apostrophes, and hyphens.">
+                <br>
+                <br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required
+                       pattern="^\+?[0-9]{1,3}?[-. ]?[0-9]{1,4}[-. ]?[0-9]{1,4}[-. ]?[0-9]{1,9}$"
+                       placeholder="e.g. +123 456 7890"
+                       title="Phone number should be in a valid format (e.g., +123 456 7890)">
+                <br>
+                <br>
+                <h3>Gender</h3>
+                <input type="radio" id="male" name="gender" value="MALE">
+                <label for="male">MALE</label>
+                <br>
+                    <input type="radio" id="female" name="gender" value="FEMALE">
+                <label for="female">FEMALE</label>
+                <br>
+                </form>
+                
+                <h2 style="background-color: chartreuse;">Email ID</h2>
+                <form style="background-color: gold;">
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required
+                           placeholder="example@example.com" 
+                           title="Please enter a valid email address (e.g., user@domain.com)">
+                    <br>
+                    <br>
+                    <label for="password">Password :</label>
+                    <input type="text" id="password" name="password">
+                    <br>
+                    <br>
+                    <label for="whatsapp"> Whatsapp no:</label>
+                    <input type="text" id="whatsapp" name="whatsapp">
+                    <br>
+                    <br>
+                    <label for="occupation">Occupation :</label>
+                    <input type="text" id="occupation" name="occupation">
+                    <br>
+                    <br>
+                    <label for="register">Register no :</label>
+                    <input type="text" id="register" name="register">
+                    <br>
+                    <br>
+                  </form>
+                  <h2 style="background-color: chartreuse;">DETAILS</h2>
+                  <form style="background-color: gold;">
+                   <h3>Membership card :</h3>
+                    <input type="checkbox" id="bronze" name="bronze" value="BRONZE">
+                <label for="bronze">BRONZE</label>
+                <br>
+                <input type="checkbox" id="silver" name="silver" value="SILVER">
+                <label for="silver">SILVER</label>
+                <br>
+                <input type="checkbox" id="gold" name="gold" value="GOLD">
+                <label for="gold">GOLD</label>
+                <br>
+                <input type="checkbox" id="platinum" name="platinum" value="PLATINUM">
+                <label for="platinum">PLATINUM</label>
+                <br>
+                <br>
+                <h3>Payment :</h3>
+                <input type="checkbox" id="pay" name="pay" value="GPAY" >
+                <label for="pay">GPAY</label>
+                <br>
+                <input type="checkbox" id="bank" name="bank" value="BANK TRANSFER" >
+                <label for="bank">BANK TRANSFER</label>
+                <br>
+                <input type="checkbox" id="cash" name="cash" value="CASH" >
+                <label for="cash">CASH</label>
+                <br>
+                <h3>Photo :</h3>
+                <label for="pics">Photo :</label>
+                <input type="file" id="pics" accept=".jpg">
+                <br>
+                <br>
+                <p style="text-align: center;">
+                <button><input type="submit" value="Submit"></button>
+                </p>
+
+
+                    
+                    
+                  </form>
+                
+
+        
+
+    </body>
+</html>
